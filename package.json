@@ -1,0 +1,22 @@
+{
+  "name": "getversion",
+  "version": "0.0.0",
+  "description": "Simple CLI for obtaining the current version on your package.json file",
+  "main": "getversion.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "package.json",
+    "version"
+  ],
+  "bin": {
+    "getversion": "./getversion.js"
+  },
+  "author": "Rafael de Oleza",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "read-package-json": "~1.1.4"
+  }
+}
