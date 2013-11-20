@@ -7,6 +7,5 @@ readJson('package.json', function (er, data) {
     console.error("There was an error reading the file");
     return;
   }
-
   console.log(data.version);
 });
