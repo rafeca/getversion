@@ -19,3 +19,8 @@ $ getversion
 # will print 0.0.1
 ```
 
+Get the version of a package in another directory:
+
+```sh
+$ getversion node_modules/request
+```
