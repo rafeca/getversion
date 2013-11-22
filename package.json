@@ -1,6 +1,6 @@
 {
   "name": "getversion",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple CLI for obtaining the current version on your package.json file",
   "main": "getversion.js",
   "scripts": {
