@@ -16,7 +16,5 @@
   },
   "author": "Rafael de Oleza",
   "license": "BSD-2-Clause",
-  "dependencies": {
-    "read-package-json": "~1.1.4"
-  }
+  "dependencies": {}
 }

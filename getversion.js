@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 
-var readJson = require('read-package-json');
+var path = require('path');
 
-readJson('package.json', function (er, data) {
-  if (er) {
-    console.error("There was an error reading the file");
-    return;
-  }
-  console.log(data.version);
-});
+var packagePath = process.argv.length > 2 ? process.argv[2] : './';
+packagePath = path.resolve(process.cwd(), path.dirname(packagePath));
+
+try {
+  console.log(require(path.join(packagePath, 'package.json')).version);
+} catch (er) {
+  console.error('There was an error reading the file');
+}
